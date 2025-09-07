@@ -1,0 +1,26 @@
+{
+  "name": "claudeagents",
+  "version": "1.0.0",
+  "description": "Homelab-focused development agent registry for Claude Code",
+  "main": "scripts/test-agent-filter.js",
+  "scripts": {
+    "test": "node scripts/test-agent-filter.js"
+  },
+  "keywords": [
+    "claude",
+    "agents",
+    "homelab",
+    "development",
+    "ai",
+    "automation"
+  ],
+  "author": "KingInYellow18",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KingInYellow18/claudeagents.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

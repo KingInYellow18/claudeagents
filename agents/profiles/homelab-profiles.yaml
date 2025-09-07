@@ -1,0 +1,232 @@
+# Homelab Agent Profiles Configuration
+# Purpose: Define agent combinations for common homelab development scenarios
+
+profiles:
+  # Media Server Stack
+  media-server:
+    name: "Media Server Development"
+    description: "Agents for building Plex/Jellyfin/Emby alternatives"
+    agents:
+      - nodejs-specialist
+      - react-19-specialist
+      - postgresql-specialist
+      - docker-containerization-specialist
+      - nginx-specialist
+      - test-engineer
+      - api-docs
+    workflow:
+      - task: "Design media library architecture"
+        agents: [system-architect, database-architect]
+      - task: "Build streaming backend"
+        agents: [backend-dev, nodejs-specialist]
+      - task: "Create responsive UI"
+        agents: [frontend-ui-code-writer-agent, react-19-specialist]
+      - task: "Containerize application"
+        agents: [docker-containerization-specialist, devops-cicd-specialist]
+
+  # Home Automation Hub
+  home-automation:
+    name: "Home Automation System"
+    description: "Build Home Assistant/OpenHAB alternatives"
+    agents:
+      - python-specialist
+      - mqtt-specialist
+      - redis-specialist
+      - vuejs-specialist
+      - websocket-specialist
+      - embedded-systems-code-agent
+      - iot-integration-specialist
+    workflow:
+      - task: "Design event-driven architecture"
+        agents: [event-driven-code-agent, system-architect]
+      - task: "Build device integration layer"
+        agents: [python-specialist, embedded-systems-code-agent]
+      - task: "Create real-time dashboard"
+        agents: [vuejs-specialist, websocket-specialist]
+      - task: "Implement automation rules engine"
+        agents: [dsl-generator-agent, workflow-orchestration-engine]
+
+  # Network Monitoring Dashboard
+  network-monitoring:
+    name: "Network Monitoring Solution"
+    description: "Build Grafana/Prometheus stack alternatives"
+    agents:
+      - go-specialist
+      - prometheus-specialist
+      - elasticsearch-specialist
+      - react-19-specialist
+      - time-series-specialist
+      - observability-platform-engineer
+    workflow:
+      - task: "Build metrics collection agents"
+        agents: [go-specialist, performance-monitor]
+      - task: "Design time-series storage"
+        agents: [database-architect, elasticsearch-specialist]
+      - task: "Create visualization dashboard"
+        agents: [react-19-specialist, d3-visualization-specialist]
+      - task: "Implement alerting system"
+        agents: [monitoring-anomaly-detector, notification-communication-architect]
+
+  # Personal Cloud Storage
+  cloud-storage:
+    name: "Personal Cloud Storage"
+    description: "Build NextCloud/Syncthing alternatives"
+    agents:
+      - rust-specialist
+      - nextjs-15-specialist
+      - postgresql-specialist
+      - s3-integration-specialist
+      - encryption-specialist
+      - sync-coordinator
+    workflow:
+      - task: "Design distributed file system"
+        agents: [system-architect, rust-specialist]
+      - task: "Build sync engine"
+        agents: [sync-coordinator, crdt-synchronizer]
+      - task: "Create web interface"
+        agents: [nextjs-15-specialist, tailwind-css-specialist]
+      - task: "Implement encryption layer"
+        agents: [security-manager, encryption-specialist]
+
+  # Container Management Platform
+  container-platform:
+    name: "Container Management UI"
+    description: "Build Portainer/Rancher alternatives"
+    agents:
+      - go-specialist
+      - kubernetes-orchestration-specialist
+      - docker-containerization-specialist
+      - react-19-specialist
+      - websocket-specialist
+      - helm-specialist
+    workflow:
+      - task: "Build Kubernetes controller"
+        agents: [go-specialist, kubernetes-orchestration-specialist]
+      - task: "Create container management API"
+        agents: [backend-dev, docker-in-docker-specialist]
+      - task: "Design management UI"
+        agents: [react-19-specialist, material-ui-component-specialist]
+      - task: "Implement deployment pipelines"
+        agents: [cicd-engineer, argocd-gitops-specialist]
+
+  # Development Environment
+  dev-environment:
+    name: "Cloud IDE Platform"
+    description: "Build VSCode Server/Gitpod alternatives"
+    agents:
+      - nodejs-specialist
+      - monaco-editor-specialist
+      - websocket-specialist
+      - docker-containerization-specialist
+      - terminal-emulator-specialist
+      - git-workflow-expert
+    workflow:
+      - task: "Build code server backend"
+        agents: [nodejs-specialist, websocket-specialist]
+      - task: "Integrate Monaco editor"
+        agents: [monaco-editor-specialist, frontend-ui-code-writer-agent]
+      - task: "Create workspace management"
+        agents: [docker-containerization-specialist, persistent-storage-setup]
+      - task: "Implement Git integration"
+        agents: [git-workflow-expert, github-modes]
+
+  # API Gateway
+  api-gateway:
+    name: "API Gateway & Proxy"
+    description: "Build Kong/Traefik alternatives"
+    agents:
+      - go-specialist
+      - nginx-specialist
+      - redis-specialist
+      - prometheus-specialist
+      - rate-limiting-specialist
+      - api-docs
+    workflow:
+      - task: "Build reverse proxy engine"
+        agents: [go-specialist, nginx-specialist]
+      - task: "Implement rate limiting"
+        agents: [redis-specialist, rate-limiting-specialist]
+      - task: "Add authentication layer"
+        agents: [jwt-specialist, oauth-specialist]
+      - task: "Create admin dashboard"
+        agents: [react-19-specialist, api-docs]
+
+  # Backup Solution
+  backup-system:
+    name: "Backup & Recovery System"
+    description: "Build Restic/Borg alternatives"
+    agents:
+      - rust-specialist
+      - deduplication-specialist
+      - encryption-specialist
+      - s3-integration-specialist
+      - cli-specialist
+      - scheduling-specialist
+    workflow:
+      - task: "Build deduplication engine"
+        agents: [rust-specialist, deduplication-specialist]
+      - task: "Implement encryption"
+        agents: [encryption-specialist, security-manager]
+      - task: "Create storage backends"
+        agents: [s3-integration-specialist, filesystem-specialist]
+      - task: "Build scheduling system"
+        agents: [scheduling-specialist, cron-specialist]
+
+  # Database Management UI
+  database-ui:
+    name: "Database Management Tool"
+    description: "Build phpMyAdmin/Adminer alternatives"
+    agents:
+      - nodejs-specialist
+      - react-19-specialist
+      - database-systems-specialist
+      - sql-parser-specialist
+      - query-builder-specialist
+      - monaco-editor-specialist
+    workflow:
+      - task: "Build multi-database connector"
+        agents: [database-systems-specialist, connection-pool-specialist]
+      - task: "Create query interface"
+        agents: [monaco-editor-specialist, sql-parser-specialist]
+      - task: "Design schema visualizer"
+        agents: [d3-visualization-specialist, react-19-specialist]
+      - task: "Implement data export/import"
+        agents: [etl-specialist, csv-parser-specialist]
+
+  # Log Management System
+  log-aggregator:
+    name: "Log Aggregation Platform"
+    description: "Build ELK Stack alternatives"
+    agents:
+      - go-specialist
+      - elasticsearch-specialist
+      - kafka-specialist
+      - react-19-specialist
+      - log-parser-specialist
+      - time-series-specialist
+    workflow:
+      - task: "Build log collection agents"
+        agents: [go-specialist, log-parser-specialist]
+      - task: "Design log storage"
+        agents: [elasticsearch-specialist, time-series-specialist]
+      - task: "Create search interface"
+        agents: [react-19-specialist, search-ui-specialist]
+      - task: "Implement log streaming"
+        agents: [kafka-specialist, websocket-specialist]
+
+# Agent Selection Rules
+selection_rules:
+  - rule: "Use language specialists for core implementation"
+  - rule: "Include testing agents for all projects"
+  - rule: "Add security agents for external-facing services"
+  - rule: "Use Docker specialists for containerization"
+  - rule: "Include documentation agents for APIs"
+  - rule: "Add monitoring agents for production services"
+
+# Performance Optimization
+optimization_hints:
+  - hint: "Spawn parallel agents for independent tasks"
+  - hint: "Use mesh topology for collaborative development"
+  - hint: "Enable memory sharing for cross-agent communication"
+  - hint: "Batch similar operations with single agent"
+  - hint: "Use specialized agents over general-purpose ones"
