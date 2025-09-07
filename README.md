@@ -4,18 +4,18 @@ A streamlined, homelab-focused agent registry for Claude Code, optimized for sof
 
 ## 🚀 Features
 
-- **272 Development-Focused Agents** across 29 specialized categories
+- **237 Development-Focused Agents** across 29 specialized categories
 - **10 Pre-configured Homelab Profiles** for common projects
 - **100% Coverage** for all core development needs
-- **Removed 178 Non-Development Agents** to maintain focus
+- **Removed 390 Non-Development Agents** to maintain focus (62.2% reduction)
 
 ## 📊 Quick Stats
 
 | Metric | Count |
 |--------|-------|
-| Total Development Agents | 272 |
+| Total Development Agents | 237 |
 | Agent Categories | 29 |
-| Removed Non-Dev Agents | 178 |
+| Removed Non-Dev Agents | 390 |
 | Homelab Project Profiles | 10 |
 
 ## 🏗️ Project Structure
