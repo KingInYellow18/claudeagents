@@ -273,8 +273,8 @@
   },
   "metadata": {
     "total_agents": 450,
-    "development_focused": 272,
-    "removed_agents": 178,
+    "development_focused": 195,
+    "removed_agents": 255,
     "last_updated": "2025-09-07",
     "purpose": "Homelab Software Development"
   }
